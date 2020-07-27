@@ -20,40 +20,40 @@
     /*
      * BotUI回复配置
      */
-    var botui = new BotUI("hello-paoger～");
+    var botui = new BotUI("fogforest");
     botui.message.bot({
         delay: 200,
         content: "Hi, there👋"
     }).then(function() {
         return botui.message.bot({
             delay: 1000,
-            content: "这里是站长 炮根😺"
+            content: "我是 蘑菇君🍄"
         })
     }).then(function() {
         return botui.message.bot({
             delay: 1000,
-            content: "一只可爱的暹罗猫猫~"
+            content: "一个可爱的蓝孩子~"
         })
     }).then(function() {
         return botui.action.button({
             delay: 1500,
             action: [{
-                text: "你好 😃",
-                value: "hello～"
+                text: "然后呢？ 😃",
+                value: "and"
             },
             {
-                text: "给爷爬 🙄",
-                value: "f**k off"
+                text: "少废话！ 🙄",
+                value: "gg"
             }]
         })
     }).then(function(res) {
-        if (res.value == "hello～") {
+        if (res.value == "and") {
             other()
         }
-        if (res.value == "f**k off") {
+        if (res.value == "gg") {
             return botui.message.bot({
                 delay: 1500,
-                content: "![](https://cdn.jsdelivr.net/gh/miaomiaogamer/van@master/paogerfola.jpg)"
+                content: "![](https://cdn.jsdelivr.net/gh/Fog-Forest/Picture-Bed/IMG/20200715120501.jpg)"
             })
         }
     });
@@ -65,58 +65,58 @@
         }).then(function() {
             return botui.message.bot({
                 delay: 1500,
-                content: "目前正直壮年，生活美满惬意"
+                content: "是个正在学习的小运维，业余Coder"
             })
         }).then(function() {
             return botui.message.bot({
                 delay: 1500,
-                content: "有老婆，也是只暹罗，叫泡芙"
+                content: "略懂HTML/CSS/JavaScript/PHP，偶尔也折腾易语言、Python"
             })
         }).then(function() {
             return botui.message.bot({
                 delay: 1500,
-                content: "我们之前育有12只儿女"
+                content: "不过还是比较熟悉主机DIY与系统环境安装部署"
             })
         }).then(function() {
             return botui.message.bot({
                 delay: 1500,
-                content: "但是孩子们都长大了，有了自己的家"
+                content: "喜欢折腾，热爱折腾，目前正在计算机一道上探索中"
             })
         }).then(function() {
             return botui.action.button({
                 delay: 1500,
                 action: [{
-                    text: "为什么叫 炮根 呢？ 🤔",
+                    text: "为什么叫 雾时之森 呢？ 🤔",
                     value: "next"
                 }]
             })
         }).then(function(res) {
             return botui.message.bot({
                 delay: 1500,
-                content: "其实爷的原名叫小炮，铲屎的喜欢叫我炮哥，叫着叫着就成了炮根或者炮肝！"
+                content: "一次起昵称时偶然打出了这个名字，于是我就沿用了下来，你也可以简称为 “雾森”，嗯！"
             })
         }).then(function() {
             return botui.action.button({
                 delay: 1500,
                 action: [{
-                    text: "域名有什么含意吗？🤔️",
+                    text: "域名有什么含意吗？(ง •_•)ง",
                     value: "next"
                 }]
             })
         }).then(function(res) {
             return botui.message.bot({
                 delay: 1500,
-                content: "因为经常看铲屎的打游戏🎮，看着看着自己也会玩了，经常趁他们不在家，帮他们操作"
+                content: "emmmmm，看备案信息你就知道了_(:з」∠)_"
             })
         }).then(function(res) {
             return botui.message.bot({
                 delay: 1500,
-                content: "所以我想要号召更多的猫咪玩家加入我们！玩游戏，我们不比铲屎的差！💪"
+                content: "如果我的文章对你有所帮助的话，那么是我的荣幸 😊"
             })
         }).then(function(res) {
             return botui.message.bot({
                 delay: 1500,
-                content: "dei，那么请你继续关注我的评测啦～"
+                content: "那么，仔细看看我的博客吧？ ^_^"
             })
         });
     }
